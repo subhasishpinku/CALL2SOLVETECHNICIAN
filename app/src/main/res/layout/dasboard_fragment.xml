@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+  <LinearLayout
+      android:id="@+id/lv"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="0.99"
+      android:orientation="vertical">
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:id="@+id/toolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="?attr/colorPrimaryDark"-->
+        <!--app:theme="@style/ThemeOverlay.AppCompat.Dark"-->
+        <!--tools:ignore="RtlCompat"-->
+        <!--android:minHeight="@dimen/abc_action_bar_default_height_material">-->
+      <!--<ImageView-->
+          <!--android:layout_width="wrap_content"-->
+          <!--android:layout_height="50sp"-->
+          <!--android:layout_gravity="end"-->
+          <!--android:src="@mipmap/logo" />-->
+
+    <!--</android.support.v7.widget.Toolbar>-->
+    <!--<TabHost xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:id="@android:id/tabhost"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:layout_weight="1"-->
+        <!--android:background="#bab7b7">-->
+      <!--<RelativeLayout-->
+          <!--android:layout_width="fill_parent"-->
+          <!--android:layout_height="fill_parent">-->
+        <!--<FrameLayout-->
+            <!--android:id="@android:id/tabcontent"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_below="@android:id/tabs" />-->
+        <!--<TabWidget-->
+            <!--android:id="@android:id/tabs"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:layout_alignParentTop="true" />-->
+      <!--</RelativeLayout>-->
+    <!--</TabHost>-->
+
+
+
+
+  </LinearLayout>
+
+
+
+</RelativeLayout>

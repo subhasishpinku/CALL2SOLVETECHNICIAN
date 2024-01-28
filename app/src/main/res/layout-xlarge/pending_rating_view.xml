@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/square_border"
+        android:layout_marginBottom="10sp">
+        <ImageView
+            android:id="@+id/imgID"
+            android:layout_width="80sp"
+            android:layout_height="80sp"
+            android:layout_marginLeft="5sp"/>
+        <TextView
+            android:layout_toRightOf="@+id/imgID"
+            android:id="@+id/nameId"
+            android:layout_marginTop="15sp"
+            android:layout_marginLeft="10sp"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Microwave Oven Repair"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_toRightOf="@+id/imgID"
+            android:id="@+id/time"
+            android:textSize="30sp"
+            android:layout_below="@+id/nameId"
+            android:layout_marginTop="5sp"
+            android:layout_marginLeft="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Friday, 23rd April 2019 at 10:30am"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/userId"
+            android:textSize="30sp"
+            android:layout_marginTop="10sp"
+            android:layout_below="@+id/time"
+            android:layout_toRightOf="@+id/imgID"
+            android:layout_marginLeft="10sp"
+            android:drawableLeft="@drawable/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"/>
+        <TextView
+            android:id="@+id/phoneId"
+            android:textSize="30sp"
+            android:layout_marginTop="10sp"
+            android:layout_below="@+id/userId"
+            android:layout_toRightOf="@+id/imgID"
+            android:layout_marginLeft="10sp"
+            android:drawableLeft="@drawable/ic_phone_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone"/>
+
+        <TextView
+            android:id="@+id/amountID"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nameId"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="45dp"
+            android:layout_marginRight="40sp"
+            android:drawableLeft="@drawable/rupeess"
+            android:text="500"
+            android:textColor="#ff0000"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/locationId"
+            android:textSize="30sp"
+            android:layout_marginTop="10sp"
+            android:layout_below="@+id/phoneId"
+            android:layout_toRightOf="@+id/imgID"
+            android:layout_marginLeft="10sp"
+            android:drawableLeft="@drawable/ic_place_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Place"/>
+        <LinearLayout
+            android:id="@+id/ratingID"
+            android:layout_below="@+id/locationId"
+            android:layout_marginTop="15sp"
+            android:layout_marginLeft="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shapesquare"
+            android:layout_marginBottom="20sp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/serviceTv"
+                android:layout_marginBottom="20sp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="35sp"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:drawableLeft="@drawable/ic_star_border_black_24dp"
+                android:drawableRight="@drawable/ic_star_border_black_24dp"
+                android:text="Rate &amp; Review Customer"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+   >
+
+    <ScrollView
+        android:layout_below="@+id/app_bar"
+        android:id="@+id/scrolView_account"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50sp">
+        <RelativeLayout
+            android:id="@+id/linear_account"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorPrimary">
+
+                        <EditText
+                            android:id="@+id/techniNameId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Technician Name"
+                            android:drawableRight="@drawable/ic_edit_green"
+                            android:imeOptions="actionNext"
+                            android:textColorHint="@color/colorPrimaryDark" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorPrimary">
+
+                        <EditText
+                            android:id="@+id/fdNameId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Father  Name"
+                            android:drawableRight="@drawable/ic_edit_green"
+                            android:imeOptions="actionNext"
+                            android:inputType="textEmailAddress"
+                            android:textColorHint="@color/colorPrimaryDark" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorPrimary">
+
+                        <EditText
+                            android:id="@+id/contractnoId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Contact No"
+                            android:drawableRight="@drawable/ic_edit_green"
+                            android:imeOptions="actionNext"
+                            android:inputType="textEmailAddress"
+                            android:textColorHint="@color/colorPrimaryDark" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorPrimary">
+
+                        <EditText
+                            android:id="@+id/whatsappnoId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Whats APP No"
+                            android:drawableRight="@drawable/ic_edit_green"
+                            android:imeOptions="actionNext"
+                            android:inputType="textEmailAddress"
+                            android:textColorHint="@color/colorPrimaryDark" />
+
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorPrimary">
+
+                        <EditText
+                            android:id="@+id/mailId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Mail Id"
+                            android:drawableRight="@drawable/ic_edit_green"
+                            android:imeOptions="actionNext"
+                            android:inputType="textEmailAddress"
+                            android:textColorHint="@color/colorPrimaryDark" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorPrimary">
+
+                        <EditText
+                            android:id="@+id/AddressId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Enter Address"
+                            android:drawableRight="@drawable/ic_edit_green"
+                            android:imeOptions="actionNext"
+                            android:inputType="textEmailAddress"
+                            android:textColorHint="@color/colorPrimaryDark" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60sp"
+                        android:layout_marginRight="3dp"
+                        android:background="@drawable/spinner_border"
+                        android:orientation="horizontal">
+                        <Spinner
+                            android:id="@+id/spID"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:spinnerMode="dropdown" />
+
+                        <ImageView
+                            android:layout_width="50sp"
+                            android:layout_height="50sp"
+                            android:layout_marginRight="10sp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:src="@drawable/spinner_bg" />
+
+                    </RelativeLayout>
+                    <RadioGroup
+                        android:id="@+id/GrentedbuildigID"
+                        android:layout_marginTop="15sp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/ownbuildingID"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Block"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18sp" />
+                        <RadioButton
+                            android:id="@+id/rentedbuildingID"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ULB"
+                            android:textSize="18sp"
+                            android:textColor="@color/colorPrimaryDark"/>
+                    </RadioGroup>
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorPrimary">
+
+                        <EditText
+                            android:id="@+id/blockID"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Block / ULB"
+                            android:drawableRight="@drawable/ic_edit_green"
+                            android:imeOptions="actionNext"
+                            android:inputType="textEmailAddress"
+                            android:textColorHint="@color/colorPrimaryDark" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorPrimary">
+
+                        <EditText
+                            android:id="@+id/postofficeID"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Post Office"
+                            android:drawableRight="@drawable/ic_edit_green"
+                            android:imeOptions="actionNext"
+                            android:inputType="textEmailAddress"
+                            android:textColorHint="@color/colorPrimaryDark" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorPrimary">
+
+                        <EditText
+                            android:id="@+id/psstationID"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Police Station"
+                            android:drawableRight="@drawable/ic_edit_green"
+                            android:imeOptions="actionNext"
+                            android:inputType="textEmailAddress"
+                            android:textColorHint="@color/colorPrimaryDark" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorPrimary">
+
+                        <EditText
+                            android:id="@+id/pincodeID"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Pincode"
+                            android:drawableRight="@drawable/ic_edit_green"
+                            android:imeOptions="actionNext"
+                            android:inputType="textEmailAddress"
+                            android:textColorHint="@color/colorPrimaryDark" />
+                    </android.support.design.widget.TextInputLayout>
+                    <TextView
+                        android:id="@+id/plusId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginTop="15sp"
+                        android:text="Identity Details (KYC)"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:drawableRight="@drawable/ic_library_add_black_24dp"
+                        android:textSize="18sp"
+                        />
+                    <LinearLayout
+                        android:id="@+id/docId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/colorPrimary">
+                            <EditText
+                                android:id="@+id/docNameId"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Document Name "
+                                android:drawableRight="@drawable/ic_edit_green"
+                                android:imeOptions="actionNext"
+                                android:inputType="textEmailAddress"
+                                android:textColorHint="@color/colorPrimaryDark" />
+                        </android.support.design.widget.TextInputLayout>
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/colorPrimary">
+                            <EditText
+                                android:id="@+id/docnoId"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Document No "
+                                android:drawableRight="@drawable/ic_edit_green"
+                                android:imeOptions="actionNext"
+                                android:inputType="textEmailAddress"
+                                android:textColorHint="@color/colorPrimaryDark" />
+                        </android.support.design.widget.TextInputLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="80sp"
+                                android:layout_height="80sp"
+                                android:scaleType="fitXY"
+                                android:background="@drawable/doucumet"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:text="Upload Document"
+                                android:textColor="@color/colorPrimaryDark"/>
+
+                            <TextView
+                                android:id="@+id/serviceTv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40sp"
+                                android:layout_gravity="center"
+                                android:drawableLeft="@drawable/ic_star_border_black_24dp"
+                                android:drawableRight="@drawable/ic_star_border_black_24dp"
+                                android:gravity="center"
+                                android:text="profile Details"
+                                android:textAllCaps="true"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/bankdetalId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginTop="15sp"
+                        android:text="Bank Details"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="18sp"
+                        />
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorPrimary">
+                        <EditText
+                            android:id="@+id/bnknameID"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Bank Name"
+                            android:drawableRight="@drawable/ic_edit_green"
+                            android:imeOptions="actionNext"
+                            android:inputType="textEmailAddress"
+                            android:textColorHint="@color/colorPrimaryDark" />
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorPrimary">
+                        <EditText
+                            android:id="@+id/branchnameId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Branch Name"
+                            android:drawableRight="@drawable/ic_edit_green"
+                            android:imeOptions="actionNext"
+                            android:inputType="textEmailAddress"
+                            android:textColorHint="@color/colorPrimaryDark" />
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorPrimary">
+                        <EditText
+                            android:id="@+id/accountnoId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Account No"
+                            android:drawableRight="@drawable/ic_edit_green"
+                            android:imeOptions="actionNext"
+                            android:inputType="textEmailAddress"
+                            android:textColorHint="@color/colorPrimaryDark" />
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorPrimary">
+                        <EditText
+                            android:id="@+id/accholderID"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Account Holder's Name"
+                            android:drawableRight="@drawable/ic_edit_green"
+                            android:imeOptions="actionNext"
+                            android:inputType="textEmailAddress"
+                            android:textColorHint="@color/colorPrimaryDark" />
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorPrimary">
+                        <EditText
+                            android:id="@+id/icefcodeID"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="IFSC Code"
+                            android:drawableRight="@drawable/ic_edit_green"
+                            android:imeOptions="actionNext"
+                            android:inputType="textEmailAddress"
+                            android:textColorHint="@color/colorPrimaryDark" />
+                    </android.support.design.widget.TextInputLayout>
+                    <TextView
+                        android:id="@+id/educationId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginTop="15sp"
+                        android:text="Qualification Details"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:drawableRight="@drawable/ic_library_add_black_24dp"
+                        android:textSize="18sp"
+                        />
+                    <LinearLayout
+                        android:id="@+id/qualiId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/colorPrimary">
+                            <EditText
+                                android:id="@+id/nexamID"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Name of the Examination "
+                                android:drawableRight="@drawable/ic_edit_green"
+                                android:imeOptions="actionNext"
+                                android:inputType="textEmailAddress"
+                                android:textColorHint="@color/colorPrimaryDark" />
+                        </android.support.design.widget.TextInputLayout>
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/colorPrimary">
+                            <EditText
+                                android:id="@+id/univerNameID"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Board / University Name"
+                                android:drawableRight="@drawable/ic_edit_green"
+                                android:imeOptions="actionNext"
+                                android:inputType="textEmailAddress"
+                                android:textColorHint="@color/colorPrimaryDark" />
+                        </android.support.design.widget.TextInputLayout>
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/colorPrimary">
+                            <EditText
+                                android:id="@+id/yearofpassID"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Year of Passing"
+                                android:drawableRight="@drawable/ic_edit_green"
+                                android:imeOptions="actionNext"
+                                android:inputType="textEmailAddress"
+                                android:textColorHint="@color/colorPrimaryDark" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/colorPrimary">
+                            <EditText
+                                android:id="@+id/marksId"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Marks (%) "
+                                android:drawableRight="@drawable/ic_edit_green"
+                                android:imeOptions="actionNext"
+                                android:inputType="textEmailAddress"
+                                android:textColorHint="@color/colorPrimaryDark" />
+                        </android.support.design.widget.TextInputLayout>
+                        <TextView
+                            android:id="@+id/productID"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:layout_marginTop="15sp"
+                            android:text="Product Specialization"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:drawableRight="@drawable/ic_library_add_black_24dp"
+                            android:textSize="18sp"
+                            />
+                        <LinearLayout
+                            android:id="@+id/lvproductId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColorHint="@color/colorPrimary">
+                                <EditText
+                                    android:id="@+id/productcataId"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Product Category"
+                                    android:drawableRight="@drawable/ic_edit_green"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="textEmailAddress"
+                                    android:textColorHint="@color/colorPrimaryDark" />
+                            </android.support.design.widget.TextInputLayout>
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColorHint="@color/colorPrimary">
+                                <EditText
+                                    android:id="@+id/productnameID"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Product Name"
+                                    android:drawableRight="@drawable/ic_edit_green"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="textEmailAddress"
+                                    android:textColorHint="@color/colorPrimaryDark" />
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</android.support.v4.widget.NestedScrollView>

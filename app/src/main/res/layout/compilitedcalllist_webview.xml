@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource"
+    android:id="@+id/L1">
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimaryDark"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark"
+        tools:ignore="RtlCompat"
+        android:minHeight="@dimen/abc_action_bar_default_height_material">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="50sp"
+            android:layout_gravity="end"
+            android:src="@mipmap/logo" />
+    </android.support.v7.widget.Toolbar>
+    <android.support.constraint.ConstraintLayout
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</RelativeLayout>

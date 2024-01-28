@@ -1,0 +1,100 @@
+apply plugin: 'com.android.application'
+
+android {
+    lintOptions {
+        checkReleaseBuilds false
+    }
+    compileSdkVersion 30
+    defaultConfig {
+        applicationId "call.callsolv.call2solvetechnician"
+        minSdkVersion 16
+        targetSdkVersion 30
+        versionCode 5
+        versionName "5.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+//    ndkVersion: '25.1.8937393'
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+//repositories {
+//    mavenCentral()
+//    maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
+//}
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //implementation 'androidx.appcompat:appcompat:1.0.2'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:cardview-v7:28.0.0'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.volley:volley:1.2.1'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'me.biubiubiu.justifytext:library:1.1'
+    implementation 'com.github.bumptech.glide:glide:4.4.0'
+    implementation 'org.apache.httpcomponents:httpcore:4.4.1'
+    //implementation 'org.apache.httpcomponents:httpclient:4.5.8'
+    implementation 'com.github.bumptech.glide:glide:4.4.0'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:design:28.0.0'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:support-v4:28.0.0'
+    //implementation 'com.google.apis:google-api-services-youtube:v3-rev181-1.22.0'
+    //implementation files('libs/YouTubeAndroidPlayerApi.jar')
+    implementation 'net.gotev:uploadservice:2.1'
+    implementation 'com.google.android.gms:play-services-maps:16.0.0'
+    implementation 'com.github.dimorinny:floating-text-button:0.0.4'
+//    implementation 'com.journeyapps:zxing-android-embedded:3.4.0'
+    implementation 'com.journeyapps:zxing-android-embedded:4.3.0'
+
+    implementation 'com.github.GoodieBag:Pinview:v1.4'
+//    implementation 'com.github.stfalcon:smsverifycatcher:0.3.2'
+    //implementation 'com.chaos.view:pinview:1.4.3'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.1.+'
+    implementation 'com.github.bumptech.glide:glide:4.2.0'
+    implementation 'com.google.android.gms:play-services-maps:15.0.1'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.google.android.gms:play-services-location:15.0.1'
+    implementation 'com.google.android.gms:play-services-maps:16.1.0'
+    implementation 'com.karumi:dexter:4.2.0'
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    implementation 'net.gotev:uploadservice:2.1'
+    implementation 'com.google.maps.android:android-maps-utils:0.4+'
+    implementation 'com.github.chrisbanes:PhotoView:2.1.3'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.google.android.gms:play-services-places:16.0.0'
+    implementation 'org.jsoup:jsoup:1.8.3'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:design:28.0.0'
+    //noinspection GradleCompatible
+    implementation "com.android.support:appcompat-v7:28.0.0"
+    //implementation 'com.journeyapps:zxing-android-embedded:3.4.0'
+    implementation 'com.google.android.gms:play-services-auth:16.0.0'
+    implementation 'com.google.android.gms:play-services-auth-api-phone:16.0.0'
+    implementation 'org.jsoup:jsoup:1.8.3'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.2'
+   //implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.19'
+    implementation 'net.gotev:uploadservice:2.1'
+//    implementation 'com.amitshekhar.android:android-networking:1.0.2'
+    implementation 'com.github.amitshekhariitbhu.Fast-Android-Networking:android-networking:v1.0.2'
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+}

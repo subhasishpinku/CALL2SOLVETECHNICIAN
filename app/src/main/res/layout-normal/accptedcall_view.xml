@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/square_border"
+        android:layout_marginBottom="10sp">
+        <ImageView
+            android:id="@+id/imgID"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_marginLeft="5sp" />
+        <TextView
+            android:layout_toRightOf="@+id/imgID"
+            android:layout_marginTop="5sp"
+            android:id="@+id/nameId"
+            android:textSize="14sp"
+            android:layout_marginLeft="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Microwave Oven Repair"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_marginTop="10sp"
+            android:layout_marginRight="10sp"
+            android:id="@+id/special"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/loc_track"
+            android:padding="10dip"
+            android:textColor="@color/red"
+            android:layout_alignParentRight="true"/>
+        <TextView
+            android:id="@+id/bookId"
+            android:visibility="gone"
+            android:text="BookId"
+            android:textColor="@color/red"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignBaseline="@+id/nameId"
+            android:layout_marginRight="20sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/juestId"
+            android:visibility="gone"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/hourtimeId"
+            android:layout_marginRight="20sp"
+            android:text="Just Now"
+            android:textColor="@color/red"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/userId"
+            android:textSize="14sp"
+            android:layout_marginTop="5sp"
+            android:layout_below="@+id/nameId"
+            android:layout_toRightOf="@+id/imgID"
+            android:layout_marginLeft="10sp"
+            android:drawableLeft="@drawable/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"/>
+        <TextView
+            android:id="@+id/phoneId"
+            android:textSize="14sp"
+            android:layout_marginTop="5sp"
+            android:layout_below="@+id/userId"
+            android:layout_toRightOf="@+id/imgID"
+            android:layout_marginLeft="10sp"
+            android:drawableLeft="@drawable/ic_phone_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone"/>
+
+<!--        <ImageView-->
+<!--            android:id="@+id/callId"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/nameId"-->
+<!--            android:layout_marginRight="40sp"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_marginTop="27dp"-->
+<!--            android:background="@drawable/ic_phone_black_24dp" />-->
+
+<!--        <TextView-->
+<!--            android:textSize="12sp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/callId"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textColor="@color/colorPrimaryDark"-->
+<!--            android:layout_marginLeft="-75dp"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:layout_toRightOf="@+id/callId"-->
+<!--            android:text="Call Now" />-->
+        <TextView
+            android:id="@+id/locationId"
+            android:textSize="14sp"
+            android:layout_marginTop="5sp"
+            android:layout_below="@+id/phoneId"
+            android:layout_toRightOf="@+id/imgID"
+            android:layout_marginLeft="10sp"
+            android:drawableLeft="@drawable/ic_place_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Place"/>
+        <TextView
+            android:id="@+id/dateId"
+            android:textSize="14sp"
+            android:layout_marginTop="5sp"
+            android:layout_below="@+id/locationId"
+            android:layout_toRightOf="@+id/imgID"
+            android:layout_marginLeft="10sp"
+            android:drawableLeft="@drawable/ic_date_range_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"/>
+        <TextView
+            android:id="@+id/timeId"
+            android:textSize="14sp"
+            android:layout_marginTop="5sp"
+            android:layout_below="@+id/dateId"
+            android:layout_toRightOf="@+id/imgID"
+            android:layout_marginLeft="10sp"
+            android:drawableLeft="@drawable/ic_access_time_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time"/>
+        <TextView
+            android:id="@+id/hourtimeId"
+            android:text="0 hrs 26 min"
+            android:textColor="@color/red"
+            android:drawableLeft="@drawable/ic_access_time_black_24dp"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginTop="5sp"
+            android:layout_below="@+id/timeId"
+            android:layout_toRightOf="@+id/imgID"
+            android:layout_marginLeft="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/statjobId"
+            android:visibility="gone"
+            android:text="1"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginTop="5sp"
+            android:layout_below="@+id/hourtimeId"
+            android:layout_toRightOf="@+id/imgID"
+            android:layout_marginLeft="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/trackid"
+            android:text="1"
+            android:visibility="gone"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginTop="5sp"
+            android:layout_below="@+id/hourtimeId"
+            android:layout_toRightOf="@+id/imgID"
+            android:layout_marginLeft="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/bokId"
+            android:visibility="gone"
+            android:text="1"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginTop="5sp"
+            android:layout_below="@+id/hourtimeId"
+            android:layout_toRightOf="@+id/imgID"
+            android:layout_marginLeft="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_below="@+id/statjobId"
+            android:layout_marginTop="5sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginBottom="5sp"
+                android:layout_weight="1"
+                android:id="@+id/callId"
+                android:layout_width="match_parent"
+                android:layout_height="35sp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/button_with_icon"
+                android:gravity="center"
+                android:background="@drawable/squareshape"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_phone_black_24dp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@color/colorPrimaryDark" />
+
+                <Button
+                    android:id="@+id/btnCallId"
+                    android:layout_width="265dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="Call Now"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/viewID"
+                android:layout_weight="1"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginBottom="5sp"
+                android:layout_width="match_parent"
+                android:layout_height="35sp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/button_with_icon"
+                android:gravity="center"
+                android:background="@drawable/squareshape"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_remove_red_eye_black_24dp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@color/colorPrimaryDark" />
+                <Button
+                    android:id="@+id/btnDetailsId"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorPrimary"
+                    android:background="@android:color/transparent"
+                    android:text="View DETAILS" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

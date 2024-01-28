@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_drawer_width">360dp</dimen>
+    <!-- Navigation Drawer -->
+    <dimen name="drawer_header_layout_height">210dp</dimen>
+    <dimen name="drawer_circular_image">120dp</dimen>
+    <dimen name="drawer_circular_image1">115dp</dimen>
+    <dimen name="drawer_margin_left">15dp</dimen>
+    <dimen name="drawer_margin_left2">30dp</dimen>
+    <dimen name="drawer_civ_border">2dp</dimen>
+    <dimen name="drawer_drawable_padding">5dp</dimen>
+    <dimen name="drawer_textview_size">30sp</dimen>
+    <dimen name="logo_w_h">100dp</dimen>
+    <dimen name="detail_backdrop_height">270dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+</resources>

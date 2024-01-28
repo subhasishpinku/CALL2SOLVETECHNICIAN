@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_view_shape"
+        android:layout_marginBottom="10sp">
+        <TextView
+            android:id="@+id/examId"
+            android:layout_width="wrap_content"
+            android:layout_height="26dip"
+            android:text="Examination        :"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp"
+            android:layout_marginLeft="10sp"/>
+        <TextView
+            android:id="@+id/examIdd"
+            android:layout_marginLeft="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="26dip"
+            android:layout_toRightOf="@+id/examId"
+            android:text="MCA"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/boardId"
+            android:layout_marginLeft="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/examIdd"
+            android:text="Board/university :"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/boardIdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/examIdd"
+            android:layout_marginLeft="10sp"
+            android:layout_toRightOf="@+id/boardId"
+            android:text="SMU"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/yearId"
+            android:layout_marginLeft="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/boardIdd"
+            android:text="year Of passing   :"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/yearIdd"
+            android:layout_marginLeft="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/boardIdd"
+            android:layout_toRightOf="@+id/yearId"
+            android:text="2016"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/persenId"
+            android:layout_marginLeft="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/yearIdd"
+            android:text="Marks%                 :"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/persenIdd"
+            android:layout_marginLeft="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/yearIdd"
+            android:layout_toRightOf="@+id/persenId"
+            android:text="80"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp"
+            android:layout_marginBottom="5sp"/>
+        <TextView
+            android:id="@+id/trueId"
+            android:visibility="gone"
+            android:layout_marginLeft="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/persenId"
+            android:text="Marks%                 :"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimaryDark"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark"
+        tools:ignore="RtlCompat"
+        android:minHeight="@dimen/abc_action_bar_default_height_material">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="50sp"
+            android:layout_gravity="end"
+            android:src="@mipmap/logo" />
+    </android.support.v7.widget.Toolbar>
+    <TextView
+        android:id="@+id/partId"
+        android:textSize="15sp"
+        android:layout_marginTop="5sp"
+        android:layout_below="@+id/toolbar"
+        android:layout_toRightOf="@+id/imgID"
+        android:layout_marginLeft="10sp"
+        android:drawableLeft="@drawable/ic_build_black_24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:text="Parts Requisition"/>
+    <LinearLayout
+        android:layout_below="@+id/partId"
+        android:layout_marginTop="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/colorPrimary">
+
+        <EditText
+            android:id="@+id/partsnameId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Parts Name"
+            android:drawableRight="@drawable/star_color"
+            android:imeOptions="actionNext"
+            android:textColorHint="@color/colorPrimaryDark" />
+
+    </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorPrimary">
+
+            <EditText
+                android:id="@+id/modelId"
+                android:drawableRight="@drawable/star_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Model No"
+                android:imeOptions="actionNext"
+                android:textColorHint="@color/colorPrimaryDark" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorPrimary">
+
+            <EditText
+                android:id="@+id/quantityId"
+                android:drawableRight="@drawable/star_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Quantity"
+                android:imeOptions="actionNext"
+                android:textColorHint="@color/colorPrimaryDark" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorPrimary">
+
+            <EditText
+                android:id="@+id/brandId"
+                android:drawableRight="@drawable/star_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Brand"
+                android:imeOptions="actionNext"
+                android:textColorHint="@color/colorPrimaryDark" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorPrimary">
+
+            <EditText
+                android:id="@+id/detailsId"
+                android:drawableRight="@drawable/star_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Details"
+                android:imeOptions="actionNext"
+                android:textColorHint="@color/colorPrimaryDark" />
+
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/subID"
+            android:background="@drawable/square_shape_blue"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Submit" />
+
+    </LinearLayout>
+</RelativeLayout>

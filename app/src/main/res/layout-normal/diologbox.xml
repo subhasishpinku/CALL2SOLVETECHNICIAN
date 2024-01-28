@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="Orientation">
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimaryDark"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark"
+        tools:ignore="RtlCompat"
+        android:minHeight="@dimen/abc_action_bar_default_height_material">
+        <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="50sp"-->
+        <!--android:layout_gravity="end"-->
+        <!--android:src="@mipmap/logo" />-->
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_below="@+id/toolbar"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reviewId"
+            android:layout_marginLeft="10sp"
+            android:layout_toRightOf="@+id/imgID"
+            style="?android:attr/ratingBarStyle"
+            android:numStars="5"
+            android:stepSize="1" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="Review Customer"/>
+        <View
+            android:layout_below="@+id/rateserviceID"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_marginTop="20sp"
+            android:id="@+id/myview1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDD9D9"/>
+        <CheckBox
+            android:id="@+id/goodID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Good customer" />
+        <CheckBox
+            android:id="@+id/averageID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Average customer" />
+        <CheckBox
+            android:id="@+id/badID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Very bad behaviour" />
+        <CheckBox
+            android:id="@+id/otherID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Other" />
+        <EditText
+            android:layout_weight="1"
+            android:layout_marginTop="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginLeft="10sp"
+            android:id="@+id/cmdinformation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/square_border"
+            android:inputType="textMultiLine"
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:lines="4"
+            android:gravity="center"
+            android:hint="Write a review"
+            android:paddingStart="10sp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:scrollHorizontally="false"
+            android:paddingLeft="10sp" />
+        <LinearLayout
+            android:id="@+id/submitID"
+            android:layout_marginTop="100sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Submit"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
